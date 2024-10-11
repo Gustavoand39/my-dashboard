@@ -15,4 +15,4 @@ import { ChangeDetectionStrategy, Component } from '@angular/core';
   `,
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class UsersComponent { }
+export default class UsersComponent { }
