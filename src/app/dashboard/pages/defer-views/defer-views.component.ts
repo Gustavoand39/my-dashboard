@@ -1,18 +1,13 @@
 import { CommonModule } from '@angular/common';
 import { ChangeDetectionStrategy, Component } from '@angular/core';
+import { HeavyLoadersSlowComponent } from '@app/shared/heavy-loaders/heavy-loaders-slow.component';
+import { TitleComponent } from '@app/shared/title/title.component';
 
 @Component({
   selector: 'app-defer-views',
   standalone: true,
-  imports: [
-    CommonModule,
-  ],
+  imports: [CommonModule, HeavyLoadersSlowComponent, TitleComponent],
   templateUrl: './defer-views.component.html',
-  styles: `
-    :host {
-      display: block;
-    }
-  `,
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export default class DeferViewsComponent { }
+export default class DeferViewsComponent {}

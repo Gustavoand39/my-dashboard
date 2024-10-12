@@ -9,7 +9,6 @@ import { routes } from '@app/app.routes';
   standalone: true,
   imports: [CommonModule, RouterModule],
   templateUrl: './sidemenu.component.html',
-  styleUrl: './sidemenu.component.css',
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class SidemenuComponent {
